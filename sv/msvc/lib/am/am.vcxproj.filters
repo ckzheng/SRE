@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\xnn-scorer">
+      <UniqueIdentifier>{a7d4ed4d-7f42-4567-9811-78e3bf121ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kaldi-am">
+      <UniqueIdentifier>{ba0d84d6-9165-43f5-888f-096caeb31526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xnn-scorer\xnn-net">
+      <UniqueIdentifier>{44a4c0fd-45af-4b9a-aaa7-08e010a5a251}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\context-dep.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\event-map.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\hmm-topology.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\io-funcs.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\kaldi-error.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\kaldi-vector.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\kaldi\transition-model.cc">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\acoustic_model.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\async_am_scorer.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\hmm.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\kaldi_am.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\xnn_am_scorer.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\xnn_neon.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\xnn_net.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\xnn_runtime.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\lib\src\core\am\xnn_sse.cpp">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\const-integer-set.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\const-integer-set-inl.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\context-dep.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\context-dep-itf.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\event-map.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\hmm-topology.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\io-funcs.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\io-funcs-inl.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\kaldi-error.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\kaldi-idec-common.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\kaldi-vector.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\kaldi-vector-inl.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\stl-utils.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\kaldi\transition-model.h">
+      <Filter>Source Files\kaldi-am</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\acoustic_model.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\am_scorer.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\async_am_scorer.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\blstm_forward.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\frm_skip_am_scorer.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\hmm.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\kaldi_am.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_am_scorer.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_avx2.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_feature.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_kaldi_utility.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_neon.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_runtime.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_sse.h">
+      <Filter>Source Files\xnn-scorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\add_shift_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\block_softmax_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\blstm_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\convolutional_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\embedding_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\layer_base.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\linear_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\log_softmax_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\lstm_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\max_pooling_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\multi_convolutional_1d_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\norm_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\normalization_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\pnorm_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\project_blstm_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\pure_relu.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\relu_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\rescale_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\sigmoid_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\lib\src\core\am\xnn_net\softmax_layer.h">
+      <Filter>Source Files\xnn-scorer\xnn-net</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

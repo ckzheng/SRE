@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{12D9E5BD-5A84-4731-82C4-8248AAE0CA6B}</ProjectGuid>
+    <RootNamespace>spkdiar</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.lib</TargetExt>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../../include;../../../lib/src/core;../../../lib/src/core/sv/Eigen</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ITERATOR_DEBUG_LEVEL=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <OpenMPSupport>true</OpenMPSupport>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../../include;../../../lib/src/core;../../../lib/src/core/sv/Eigen</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_ITERATOR_DEBUG_LEVEL=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\diag_gmm.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\frame_posterior.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\full_gmm.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\ivector_estimator.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\ivector_extract_pipeline_new.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\spkdiar.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\utterance_stats.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\viterbi.cpp" />
+    <ClCompile Include="..\..\..\lib\src\core\spkdiar\wav.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\ahc.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\bic.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\config.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\denoise.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\diag_gmm.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\diag_gmm_normal.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\diag_gmm_trainer.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\frame_posterior.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\full_gaussian.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\full_gmm.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\full_gmm_normal.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\full_gmm_trainer.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\ivector_estimator.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\ivector_extract_pipeline_new.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\ivector_transform.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\mfcc.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\new_math.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\new_matrix.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\new_vector.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\plda.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\posterior.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\random.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\resource_loader.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\resource_manager.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\seg.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\speaker_cluster.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\spkdiar.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\spkdiar_impl.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\spkdiar_result.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\spkdiar_serialize.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\spkdiar_tunning.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\utterance_stats.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\vad.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\viterbi.h" />
+    <ClInclude Include="..\..\..\lib\src\core\spkdiar\wav.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
